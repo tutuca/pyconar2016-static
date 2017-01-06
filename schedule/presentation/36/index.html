@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8" />
+        <title>PyconAR 2016 | Charla/Taller: Compartiendo memoria eficientemente con proxies</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+    <link href='../../../site_media/static/css/site-ac084c7975.css' rel='stylesheet' />
+
+    <link rel="shortcut icon" type="image/png" href="../../../site_media/static/images/favicon.ico"/>
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    
+      <meta property="og:title" content="Pyconar 2016 - 25, 26 y 27 de Noviembre - Bahía Blanca"/>
+      <meta property="og:site_name" content="Pyconar 2016"/>
+      <meta property="og:url" content="http://ar.pycon.org"/>
+      <meta property="og:image" content="http://ar.pycon.org/site_media/static/images/logo-fb.png"/>
+      <meta property="og:description" content="8va Conferencia Argentina de Python, organizada y llevada a cabo por voluntarios de la comunidad Python Argentina (PyAr), y en esta oportunidad co­organizada por Facttic, la Federación de cooperativas de trabajo de tecnología innovación y conocimiento."/>
+    
+
+    </head>
+    <body class="presentation" id="" >
+        <div class="">
+
+            
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html#">PYCONAR2016</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          
+            
+
+
+
+
+            
+<ul class="nav navbar-nav">
+    
+        <li class=" ">
+            <a href="../../../index.html" >
+                Home
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../schedule.html" >
+                Agenda
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../organizadores/index.html" >
+                Organización
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../sponsors/index.html" >
+                Sponsors
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Comunidad
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../codigo-conducta/index.html" >Código de conducta</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../diversidad/index.html" >Diversidad</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    
+    
+
+<div class="container messages">
+  
+</div>
+
+
+
+            
+  <section class="container-fluid">
+    <div class="container">
+      
+
+    <h4>
+        Viernes
+        17:00&ndash;18:00
+    </h4>
+
+<h2>Compartiendo memoria eficientemente con proxies</h2>
+
+<h4>
+    
+        <a href="../../../speaker/profile/21/index.html">Claudio Freire</a>
+</h4>
+
+<dl class="dl-horizontal">
+    <dt>Audience level:</dt>
+    <dd style="margin-bottom: 0;">Avanzada</dd>
+</dl>
+
+<h3>Descripción</h3>
+
+<div class="description"><p>¿Cuántas tuviste que escalar, con multiprocessing, o tu framework favorito?
+¿Notaste que los requisitos de memoria se te iban a las nubes?
+Presentaré una lib recién salida de la panadería, <em>sharedbuffers</em>, y 
+las técnicas y conceptos detrás de la misma. Cómo crear segmentos de
+memoria compartida, cómo usarlos para compartir objetos y estructuras complejas,
+e incluso que no entran en memoria.</p></div>
+
+<h3>Resumen</h3>
+
+<div class="abstract"><p>La charla intenta exponer dos cosas:</p>
+<p>Por un lado, técnicas interesantes para compartir
+memoria de forma eficiente en Python, algo que suele ser complejo con las herramientas
+normalmente a disposición de los desarrolladores.</p>
+<p>Por otro lado, expone una librería que hice a tal efecto, <a href="index.html" rel="nofollow">sharedbuffers</a>,
+con el objetivo de hacer la tarea más sencilla para el próximo que intente.</p>
+<p>Se van a cubrir conceptos de alto nivel, aptos para usuarios intermedios, como es el uso de la librería, 
+pero para poder sacar el provecho máximo a la charla, en particular la segunda parte en que se exponen
+los detalles de la implementación, es necesario tener conocimientos más avanzados. Así que la estoy marcando
+como una charla avanzada.</p>
+<p>Y sí, no tengo ni idea si se dice librería o biblioteca. Pero se instala en /usr/<em>lib</em> así que yo le digo <em>lib</em>rería :-p</p>
+<p>El flujo de la charla está planeado a grandes rasgos como sigue:</p>
+<ul>
+<li>Motivación 4'<ul>
+<li>El cache que no entra en memoria 7 veces</li>
+<li>Cuando el costo de serialización se vuelve prohibitivo</li>
+<li>Transición de un cache a un bundle compartido</li>
+</ul>
+</li>
+<li>Ejemplo rápido 3'<ul>
+<li>Base de user agents de 30GB</li>
+</ul>
+</li>
+<li>La técnica por arriba  12'<ul>
+<li>Compartiendo un buffer de bytes mediante archivos mapeados 2'</li>
+<li>Embebiendo objetos simples en el buffer 5'<ul>
+<li>Definición de schemas 2'</li>
+<li>Manipulación sin deserialización con proxies 3'</li>
+</ul>
+</li>
+<li>Complejizando los objetos 5'<ul>
+<li>Colecciones  1'</li>
+<li>Estructuras jerárquicas  2'</li>
+<li>Estructuras cíclicas  2'</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>La técnica a bajo nivel 16'<ul>
+<li>Estructura en memoria de un objeto  4'<ul>
+<li>Atributos con tipos estáticos</li>
+<li>Wrappers con RTTI para atributos con tipo dinámico</li>
+</ul>
+</li>
+<li>Secuencias lineales 4'</li>
+<li>Mapeos 8'<ul>
+<li>El hash table compacto  5'</li>
+<li>Características de performance  3'</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Logrando que vaya rápido 6'<ul>
+<li>Cython magic  3'</li>
+<li>Reuso de proxies, transmutación de tipos  3'</li>
+</ul>
+</li>
+<li>El futuro 4'<ul>
+<li>Compatibilidad/chequeo de schemas 1'</li>
+<li>Proxies transparentes transmutando mixins 1'</li>
+<li>Estructuras mutables y lockless 2'</li>
+</ul>
+</li>
+<li>Preguntas</li>
+</ul></div>
+
+
+<h3>Slides</h3>
+<ul>
+    
+    <li><a href="../../../proposals/document/6/2003fb75-dd55-44f1-90ca-d1496e8a818a.pdf">Slides de la charla, en formato pdf</a></li>
+    
+    <li><a href="../../../proposals/document/5/ff4059c7-f10e-4c1f-b34e-47739f212464.odp">Slides de la charla, en formato libreoffice</a></li>
+    
+</ul>
+
+
+<h3>Video</h3>
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="https://www.youtube.com/embed/8zfagJjvFyo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+            
+    
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+<ul class="nav navbar-nav">
+    
+        <li class=" ">
+            <a href="../../../index.html" >
+                Home
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../schedule.html" >
+                Agenda
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../organizadores/index.html" >
+                Organización
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../sponsors/index.html" >
+                Sponsors
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Comunidad
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../codigo-conducta/index.html" >Código de conducta</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../diversidad/index.html" >Diversidad</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+        <p>PYCONAR2016 | Powered by <a href="http://eldarion.com/symposion/" target="_blank">Symposion</a></p>
+      </div>
+      <div class="col-md-4 text-right">
+        <p>Contactate a través de:</p>
+        <a href="https://twitter.com/pyconar" target="_blank"><img src="../../../site_media/static/images/logo-twitter.svg"></a>
+        <a href="https://www.facebook.com/pyconar2016/" target="_blank"><img src="../../../site_media/static/images/logo-facebook.svg"></a>
+        <a href="mailto:pyconar@python.org.ar" target="_blank"><img src="../../../site_media/static/images/logo-email.svg"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+        </div>
+
+        
+    <script src='../../../site_media/static/js/site-fb998e185a.js'></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+        
+            <script src="../../../site_media/static/pinax/js/theme.js"></script>
+        
+
+        
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70624345-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+    </body>
+</html>

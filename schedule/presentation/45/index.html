@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8" />
+        <title>PyconAR 2016 | Charla/Taller: Code-cropper: código que genera código más simple</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+    <link href='../../../site_media/static/css/site-ac084c7975.css' rel='stylesheet' />
+
+    <link rel="shortcut icon" type="image/png" href="../../../site_media/static/images/favicon.ico"/>
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    
+      <meta property="og:title" content="Pyconar 2016 - 25, 26 y 27 de Noviembre - Bahía Blanca"/>
+      <meta property="og:site_name" content="Pyconar 2016"/>
+      <meta property="og:url" content="http://ar.pycon.org"/>
+      <meta property="og:image" content="http://ar.pycon.org/site_media/static/images/logo-fb.png"/>
+      <meta property="og:description" content="8va Conferencia Argentina de Python, organizada y llevada a cabo por voluntarios de la comunidad Python Argentina (PyAr), y en esta oportunidad co­organizada por Facttic, la Federación de cooperativas de trabajo de tecnología innovación y conocimiento."/>
+    
+
+    </head>
+    <body class="presentation" id="" >
+        <div class="">
+
+            
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html#">PYCONAR2016</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          
+            
+
+
+
+
+            
+<ul class="nav navbar-nav">
+    
+        <li class=" ">
+            <a href="../../../index.html" >
+                Home
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../schedule.html" >
+                Agenda
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../organizadores/index.html" >
+                Organización
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../sponsors/index.html" >
+                Sponsors
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Comunidad
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../codigo-conducta/index.html" >Código de conducta</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../diversidad/index.html" >Diversidad</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    
+    
+
+<div class="container messages">
+  
+</div>
+
+
+
+            
+  <section class="container-fluid">
+    <div class="container">
+      
+
+    <h4>
+        Viernes
+        10:00&ndash;11:00
+    </h4>
+
+<h2>Code-cropper: código que genera código más simple</h2>
+
+<h4>
+    
+        <a href="../../../speaker/profile/46/index.html">Gervasio Calderón</a>
+</h4>
+
+<dl class="dl-horizontal">
+    <dt>Audience level:</dt>
+    <dd style="margin-bottom: 0;">Intermedia</dd>
+</dl>
+
+<h3>Descripción</h3>
+
+<div class="description"><p>Code-cropper extrae comportamiento de código Python live, generando un programa equivalente reducido a funciones o clases de interés. Puede servir para simplificar un programa, generar Unit-tests, auditoría, mocking, etc.
+Se usan:</p>
+<ul>
+<li>
+<p>metaprogramación</p>
+</li>
+<li>
+<p>formato Json para el grafo de llamadas</p>
+</li>
+<li>
+<p>colas multithreading</p>
+</li>
+<li>
+<p>generación de código</p>
+</li>
+</ul>
+<p><a href="https://github.com/GervasioCalderon/code-cropper/" rel="nofollow">https://github.com/GervasioCalderon/code-cropper/</a></p></div>
+
+<h3>Resumen</h3>
+
+<div class="abstract"><h1>Code Cropper</h1>
+<h3>Introducción</h3>
+<p>Code-cropper es una herramienta que extrae comportamiento de código Python en ejecución generando un programa equivalente al original pero solamente con las funciones y clases elegidas por el programador. Se utilizan técnicas de metaprogramación para decorar las funciones seleccionadas. Esto puede servir para simplificación del código, generación automática de Unit-tests o Mock-objects, auditoría, etc.</p>
+<p>La página de GitHub de la tool es:</p>
+<ul>
+<li><a href="https://github.com/GervasioCalderon/code-cropper/" rel="nofollow">https://github.com/GervasioCalderon/code-cropper/</a></li>
+</ul>
+<h3>Implementación</h3>
+<p>En el proyecto se usan:</p>
+<ul>
+<li>librerías de metaprogramación, como <em>inspect</em> y <em>types</em>;</li>
+<li>formato Json para guardar el grafo de llamadas;</li>
+<li>colas multithreading, para desacoplar llamadas a la función original del guardado del grafo.</li>
+</ul>
+<h3>Posibles usos</h3>
+<p>Con esta herramienta aplicada a un sistema complejo se podría:</p>
+<ul>
+<li>hacer auditoría: solamente para "loggear" las funciones que se llaman, y con qué parámetros; por ejemplo:<ul>
+<li>anotar una clase que representa una conexión de DB y ver el detalle de las consultas que pasan por ella;</li>
+<li>anotar &lt;code&gt;os.path.join()&lt;/code&gt; para ver (como una simplificación) qué funciones acceden al sistema de archivos. </li>
+</ul>
+</li>
+<li>simplificar el código, aislando sólo clases o funciones de interés; idealmente se podría reproducir un bug o un sub-sistema sólo con este subconjunto de clases.</li>
+<li>detectar errores azarosos o de multithreading: se podría grabar sucesivas corridas, y comparar luego los grafos de llamadas o los códigos equivalentes, para ver qué parametros son los que ocasionan estos errores.</li>
+<li>generar automáticamente Unit-tests: dado que se guarda qué funciones se llaman y el valor esperado, se puede armar un Unit-Test aproximado; con esta base, hace falta la mano del programador para que las funciones a "testear" y los valores esperados tengan sentido. Pero es una buena aproximación inicial, sobre todo porque automatiza las tareas rutinarias como armar los parámetros de entrada a las funciones.</li>
+<li>Armar "mock objects": así como se hookea a las clases para que generen un Json con la corrida, también se las podría hookear para que lean de estos Json en una corrida posterior y devuelvan los mismos valores. Esto es una forma casera de obtener "mock objects" (por ejemplo, para cuando es muy costoso llamar a los objetos originales).</li>
+</ul></div>
+
+
+<h3>Slides</h3>
+<ul>
+    
+    <li><a href="../../../proposals/document/18/68fe7714-1882-4126-ab07-2d1bfb734452.pdf">Slides de mi charla.</a></li>
+    
+</ul>
+
+
+<h3>Video</h3>
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="https://www.youtube.com/embed/wyo1rcIh9bs" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+            
+    
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+<ul class="nav navbar-nav">
+    
+        <li class=" ">
+            <a href="../../../index.html" >
+                Home
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../schedule.html" >
+                Agenda
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../organizadores/index.html" >
+                Organización
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../sponsors/index.html" >
+                Sponsors
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Comunidad
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../codigo-conducta/index.html" >Código de conducta</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../diversidad/index.html" >Diversidad</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+        <p>PYCONAR2016 | Powered by <a href="http://eldarion.com/symposion/" target="_blank">Symposion</a></p>
+      </div>
+      <div class="col-md-4 text-right">
+        <p>Contactate a través de:</p>
+        <a href="https://twitter.com/pyconar" target="_blank"><img src="../../../site_media/static/images/logo-twitter.svg"></a>
+        <a href="https://www.facebook.com/pyconar2016/" target="_blank"><img src="../../../site_media/static/images/logo-facebook.svg"></a>
+        <a href="mailto:pyconar@python.org.ar" target="_blank"><img src="../../../site_media/static/images/logo-email.svg"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+        </div>
+
+        
+    <script src='../../../site_media/static/js/site-fb998e185a.js'></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+        
+            <script src="../../../site_media/static/pinax/js/theme.js"></script>
+        
+
+        
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70624345-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+    </body>
+</html>

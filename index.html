@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="utf-8" />
+        <title>PyconAR 2016 | Bienvenid@os a Pyconar2016</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+  
+    <link href='site_media/static/css/site-ac084c7975.css' rel='stylesheet' />
+
+    <link rel="shortcut icon" type="image/png" href="site_media/static/images/favicon.ico"/>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <![endif]-->
+        
+
+        
+    
+      <meta property="og:title" content="Pyconar 2016 - 25, 26 y 27 de Noviembre - Bahía Blanca"/>
+      <meta property="og:site_name" content="Pyconar 2016"/>
+      <meta property="og:url" content="http://ar.pycon.org"/>
+      <meta property="og:image" content="http://ar.pycon.org/site_media/static/images/logo-fb.png"/>
+      <meta property="og:description" content="8va Conferencia Argentina de Python, organizada y llevada a cabo por voluntarios de la comunidad Python Argentina (PyAr), y en esta oportunidad co­organizada por Facttic, la Federación de cooperativas de trabajo de tecnología innovación y conocimiento."/>
+    
+
+    </head>
+    <body class="home" id="" >
+        <div class="">
+
+            
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html#">PYCONAR2016</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          
+            
+
+
+
+
+            
+<ul class="nav navbar-nav">
+    
+        <li class=" active">
+            <a href="index.html" >
+                Home
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="schedule.html" >
+                Agenda
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="organizadores/index.html" >
+                Organización
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="sponsors/index.html" >
+                Sponsors
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Comunidad
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="codigo-conducta/index.html" >Código de conducta</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="diversidad/index.html" >Diversidad</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    
+      <header>
+  <div class="container">
+    <br>
+    <div class="center">
+      <h1>
+        <img src="site_media/static/images/logo.png">
+      </h1>
+      <p class="lead">8va Conferencia Argentina de Python</p>
+      <p class="lead">25, 26 y 27 de Noviembre - Bahía Blanca</p>
+    </div>
+
+  </div><!-- /.container -->
+</header>
+
+
+    
+    
+
+<div class="container messages">
+  
+</div>
+
+
+
+            
+  
+  <section class="container-fluid primary block-blue">
+    <div class="container">
+      <h2>!Gracias!</h2>
+      <p>Desde la organización de la PyconAR 2016 queríamos agradecerles a todos
+      los asistentes, sponsors, colaboradores y oradores por habernos ayudado a
+      construir este evento el cual disfrutamos enormemente. Esperamos que les
+      haya gustado tanto como a nosotros.</p>
+      <p>¡Hasta pronto!</p>
+    </div>
+  </section>
+  
+
+  <section class="container-fluid secondary block-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><img src="site_media/static/images/foto_final.jpg" class="img-responsive" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid secondary block-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Ubicaciones</h2>
+          <p>La conferencia se desarrolló en tres espacios. El día viernes
+          sprints, charlas y un taller de <a href="http://dementeslibres.facttic.org.ar/">De mentes Libres</a> en el Club de emprendedores de Bahía
+          Blanca en la calle Drago 45 (pleno centro de la ciudad) y el taller de Django Girls en el Salón "Fundadores" de la UNS en la Av. Colón 80,
+          y los días sábado y domingo el evento en el
+          Complejo Palihue perteneciente a la Universidad Nacional del Sur,
+          ubicado en la calle San Andrés al 800, hubo
+          stands, talleres, múltiples tracks de charlas, espacios de networking y sprints.</p>
+        </div>
+      </div>
+      <h3>Club de emprendedores</h3>
+      <div class="row top-buffer">
+        <div class="col-md-6">
+          <div id="map-club" class="map"></div>
+        </div>
+        <div class="col-md-6">
+          <img src="site_media/static/images/club_emprendedores.jpg" class="img-responsive" />
+        </div>
+      </div>
+      <h3>Salón de los Fundadores</h3>
+      <div class="row top-buffer">
+        <div class="col-md-6">
+          <div id="map-fundadores" class="map"></div>
+        </div>
+        <div class="col-md-6">
+          <img src="site_media/static/images/fundadores.jpg" class="img-responsive" />
+        </div>
+      </div>
+      <h3>Complejo Palihue</h3>
+      <div class="row top-buffer">
+        <div class="col-md-6">
+          <div id="map-palihue" class="map"></div>
+        </div>
+        <div class="col-md-6">
+          <img src="site_media/static/images/palihue.jpg" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="container-fluid secondary block-blue invitados">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Invitados</h2>
+        </div>
+      </div>
+
+      <div class="row" id="victoria">
+        <div class="col-md-3">
+          <img src="site_media/static/images/victoria2.jpg" class="img-responsive" />
+        </div>
+        <div class="col-md-9">
+          <h3>Victoria Martinez de la Cruz</h3>
+          <p>Ingeniera de software en <a href="https://www.redhat.com/es" target="_blank">Red Hat</a>.</p>
+          <p>Victoria Martinez de la Cruz es graduada de la Universidad Nacional del Sur y actualmente trabaja como ingeniera de software en Red Hat para el proyecto OpenStack. Es co-fundadora de la comunidad LinuxChix Argentina, iniciativa que busca reunir a las mujeres en tecnología de Argentina y ayudar a minimizar la brecha de género en el ámbito de las TICs. Mentora en diversas iniciativas de educación, apasionada y gran defensora de la filosofía open-source y entusiasta de la tecnología en general.</p>
+        </div>
+      </div>
+      <div class="row" id="angel">
+        <div class="col-md-3">
+            <img src="site_media/static/images/angel.jpg" class="img-responsive" />
+        </div>
+        <div class="col-md-9">
+          <h3>Ángel Medinilla</h3>
+          <p>Fundador, Gerente y Consultor Senior en <a href="http://www.proyectalis.com/" target="_blank">Proyectalis</a> y en <a href="http://www.improvement21.com/" target="_blank">Improvement21</a>.</p>
+          <p>Ángel Medinilla lleva más de 20 años en el mercado de las Tecnologías de la Información y las Telecomunicaciones. Desde 2007 es Gerente y Consultor Senior en Proyectalis, la empresa líder en la prestación de servicios de consultoría y formación en metodologías Ágiles en España y una de las más reconocidas a nivel internacional, con proyectos desarrollados en empresas internacionales y nacionales. En 2015, junto con Andrea Darabos, ha fundado Improvement21, una empresa dedicada a llevar los hábitos de mejora continua a personas y organizaciones de todo el mundo.</p>
+        </div>
+      </div>
+      <div class="row" id="fernando">
+        <div class="col-md-3">
+            <img src="site_media/static/images/Fernando-S.png" class="img-responsive" />
+        </div>
+        <div class="col-md-9">
+          <h3>Fernando Schapachnik</h3>
+          <p><a href="http://www.fundacionsadosky.org.ar/" target="_blank">Fundación Sadosky</a></p>
+          <p>Fernando Schapachnik es doctor en Ciencias de la Computación y profesor adjunto
+del Departamento de Computación de la Facultad de Ciencias Exactas y Naturales
+de la Universidad de Buenos Aires. Participa de la coordinación de la
+Iniciativa Program.AR de la Fundación Dr. Manuel Sadosky. En los últimos años
+se ha dedicado a distintos aspectos relacionados con la llegada de las Ciencias
+de la Computación a la escuela argentina.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid secondary block-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Galería de fotos</h2>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-12">
+            <div id="flickrembed"></div><small style="display: block;
+                text-align: center; margin: 0 auto;">Powered by <a
+                    href="https://flickrembed.com">flickr embed</a>.</small>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="container-fluid secondary block-blue sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Sponsors</h2>
+          
+
+
+
+<div id="content_sponsors" class="content-box ">
+    
+    <h3>Platino</h3>
+
+<ul>
+  <li>
+    <a href="https://www.onapsis.com/company/careers" target="_blank">
+      <img src="site_media/static/images/sponsors/onapsis.png" alt="Onapsis" width="300px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="https://www.python.org/psf-landing/" target="_blank">
+      <img src="site_media/static/images/sponsors/psf.png" alt="PSF" width="" class="img-responsive">
+    </a>
+  </li>
+</ul>
+
+<h3>Oro</h3>
+
+<ul>
+  <li>
+    <a href="http://www.machinalis.com" target="_blank">
+      <img src="site_media/static/images/sponsors/machinalis.png" alt="Machinalis" width="350px" class="img-responsive">
+    </a>
+  </li>
+</ul>
+
+<h3>Plata</h3>
+
+<ul>
+  <li>
+    <a href="http://radiocut.fm" target="_blank">
+      <img src="site_media/static/images/sponsors/radiocut.png" alt="Radio Cut" width="120px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://www.devsar.com/" target="_blank">
+      <img src="site_media/static/images/sponsors/devsar.png" alt="Devsar" width="120px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://www.telefonica.com.ar/" target="_blank">
+      <img src="site_media/static/images/sponsors/telefonica.png" alt="Telefónica" width="120px" class="img-responsive">
+    </a>
+  </li>
+</ul>
+
+<h3>Bronce</h3>
+
+<ul style="margin-bottom: 20px;">
+  <li>
+    <a href="http://www.fierro.com.ar/" target="_blank">
+      <img src="site_media/static/images/sponsors/fierro.png" alt="Fierro" width="90px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://camba.coop" target="_blank" style="padding: 20px 30px;">
+      <img src="site_media/static/images/sponsors/camba.png" alt="Cambá" width="110px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://devecoop.com/" target="_blank">
+      <img src="site_media/static/images/sponsors/devecoop.png" alt="Devecoop" width="90px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://www.bitson.com.ar" target="_blank">
+      <img src="site_media/static/images/sponsors/bitson.png" alt="Bitson" width="90px" class="img-responsive">
+    </a>
+  </li>
+</ul>
+
+<ul style="margin-bottom: 20px;">
+  <li>
+    <a href="http://fiqus.com" target="_blank" style="padding: 10px 20px;">
+      <img src="site_media/static/images/sponsors/fiqus2.png" alt="Fiqus" width="130px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://www.tokkobroker.com/" target="_blank">
+      <img src="site_media/static/images/sponsors/tokkolabs.png" alt="Tokko Labs" width="90px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="https://www.eventbrite.com.ar/" target="_blank" style="padding: 10px 20px;">
+      <img src="site_media/static/images/sponsors/eventbrite.png" alt="Eventbrite" width="130px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="https://moni.com.ar/" target="_blank" style="padding: 10px 20px;">
+      <img src="site_media/static/images/sponsors/moni.png" alt="Moni" width="130px" class="img-responsive">
+    </a>
+  </li>
+</ul>
+
+<ul style="margin-bottom: 20px;">
+  <li>
+    <a href="http://www.unixono.com.ar" target="_blank" style="padding: 10px 20px;">
+      <img src="site_media/static/images/sponsors/unixono.png" alt="Unixono" width="130px" class="img-responsive">
+    </a>
+  </li>
+  <li>
+    <a href="http://www.adc.org.ar" target="_blank" style="padding: 10px 20px;">
+      <img src="site_media/static/images/adc.png" alt="ADC" width="130px" class="img-responsive">
+    </a>
+  </li>
+</ul>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section class="container-fluid primary block-blue">
+    <div class="container">
+      <h2>Seguimos buscando Sponsors</h2>
+      <p>¡Si querés apoyar la pyconar no dudes en escribirnos!</p>
+      <div class="center"><a href="mailto:sponsor-pyconar@python.org.ar" class="btn btn-warning">Convertite en Sponsor</a></div>
+    </div>
+  </section -->
+
+
+
+            
+    
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+<ul class="nav navbar-nav">
+    
+        <li class=" active">
+            <a href="index.html" >
+                Home
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="schedule.html" >
+                Agenda
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="organizadores/index.html" >
+                Organización
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="sponsors/index.html" >
+                Sponsors
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Comunidad
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="codigo-conducta/index.html" >Código de conducta</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="diversidad/index.html" >Diversidad</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+        <p>PYCONAR2016 | Powered by <a href="http://eldarion.com/symposion/" target="_blank">Symposion</a></p>
+      </div>
+      <div class="col-md-4 text-right">
+        <p>Contactate a través de:</p>
+        <a href="https://twitter.com/pyconar" target="_blank"><img src="site_media/static/images/logo-twitter.svg"></a>
+        <a href="https://www.facebook.com/pyconar2016/" target="_blank"><img src="site_media/static/images/logo-facebook.svg"></a>
+        <a href="mailto:pyconar@python.org.ar" target="_blank"><img src="site_media/static/images/logo-email.svg"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+        </div>
+
+        
+    
+    <script src='site_media/static/js/site-fb998e185a.js'></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js" defer></script>
+    <script src="https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157677377824525&sort=0&by=album&theme=default&scale=fit&skin=default&id=584867a46d8e3"></script>
+    <script>
+    function initMaps() {
+      var LatLngPalihue = {lat: -38.694053, lng: -62.249016};
+      var LatLngClub = {lat: -38.719668, lng: -62.266995};
+      var LatLngFundadores = {lat: -38.71971, lng: -62.26782};
+
+      function makeTileLayer() {
+        return L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://openstreetmap.org/copyright">Colaboradores de OpenStreetMap</a>',
+          maxZoom: 19
+        });
+      }
+
+      var mapPalihue = L.map('map-palihue').setView(LatLngPalihue, 17);
+      makeTileLayer().addTo(mapPalihue);
+
+      var mapClub = L.map('map-club').setView(LatLngClub, 18);
+      makeTileLayer().addTo(mapClub);
+
+      var mapFundadores = L.map('map-fundadores').setView(LatLngFundadores, 18);
+      makeTileLayer().addTo(mapFundadores);
+
+      var marker = L.marker(LatLngPalihue).addTo(mapPalihue);
+      marker.bindPopup('UNS Campus Palihue');
+
+      var marker = L.marker(LatLngClub).addTo(mapClub);
+      marker.bindPopup('Club de emprendedores de Bahía Blanca');
+
+      var marker = L.marker(LatLngFundadores).addTo(mapFundadores);
+      marker.bindPopup('Salón de los Fundadores');
+    }
+
+    $(document).ready(initMaps);
+    </script>
+
+
+        
+            <script src="site_media/static/pinax/js/theme.js"></script>
+        
+
+        
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70624345-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+    </body>
+</html>
