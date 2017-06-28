@@ -1,7 +1,7 @@
 # Logs
 logs
 *.log
-
+deploy_rsa
 # Runtime data
 pids
 *.pid
