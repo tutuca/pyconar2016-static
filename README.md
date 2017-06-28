@@ -1,14 +1,14 @@
-# Clean Start
----
-#### The plain and simple starter.
+17, 18 y 19 de Noviembre, PyConAr 2017 @ Córdoba!
+=================================================
 
-# Installation
----
-Install this starter (assuming Gatsby is installed) by running from your CLI: 
-```
-gatsby new clean gh:brianstone/gatsby-starter-clean
-```
 
-# Deploy
+Medios de comunicación:
+-----------------------
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/brianstone/gatsby-starter-clean)
+Sitio oficial: http://pycon.com.ar
+
+IRC: irc.freenode.org #pyar (usuarios fisadev y arielrossanigo)
+
+MAIL:  Gaucho <emilioramirez04@gmail.com> o Tutuca <maturburu@gmail.com>
+
+Twitter: @pyconar
