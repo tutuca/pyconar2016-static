@@ -7,7 +7,7 @@ Medios de comunicación:
 
 Sitio oficial: http://pycon.com.ar
 
-IRC: irc.freenode.org #pyar (usuarios fisadev y arielrossanigo)
+IRC: irc.freenode.org #pyar (usuarios tutuca y gaucho)
 
 MAIL:  Gaucho <emilioramirez04@gmail.com> o Tutuca <maturburu@gmail.com>
 

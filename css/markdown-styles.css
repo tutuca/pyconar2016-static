@@ -1,99 +1,83 @@
-.warning {
-  color: #9F6000;
-  background-color: #FEEFB3;
-  padding: 18px;
+.container-fluid {
+  padding: 0;
 }
-.warning:before {
-  content:'\26A0';
-  margin-right: 9px;
-}
-
-.rfc-page pre {
-  font-family: inherit;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
-.hljs-comment,
-.hljs-quote {
-  color: #998;
-  font-style: italic;
+.flex-row.flex-fill {
+  height: 100vh;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-subst {
-  color: #333;
-  font-weight: bold;
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.hljs-number,
-.hljs-literal,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag .hljs-attr {
-  color: #008080;
+.flex-col.flex-fill {
+  width: 100%;
 }
 
-.hljs-string,
-.hljs-doctag {
-  color: #d14;
+.flex-right {
+  margin-left: auto;
 }
 
-.hljs-title,
-.hljs-section,
-.hljs-selector-id {
-  color: #900;
-  font-weight: bold;
+.left {
+  width: 50%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hljs-subst {
-  font-weight: normal;
+.right {
+  background-color: #405BA8;
+  height: 100%;
+  width: 50%;
+  flex-grow: 1;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
 }
-
-.hljs-type,
-.hljs-class .hljs-title {
-  color: #458;
-  font-weight: bold;
+.right::after {
+  content: "";
+  background: url('/background.jpg') no-repeat center center;
+  opacity: 0.35;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
-
-.hljs-tag,
-.hljs-name,
-.hljs-attribute {
-  color: #000080;
-  font-weight: normal;
+.inner-content ul {
+  list-style-position: outside;
 }
-
-.hljs-regexp,
-.hljs-link {
-  color: #009926;
+.inner-content div {
+  position: relative;
+  z-index: 9999;
 }
-
-.hljs-symbol,
-.hljs-bullet {
-  color: #990073;
+.inner-content {
+  opacity: 1;
+  width: 80%;
+  text-align: left;
+  color:#DDD;
 }
-
-.hljs-built_in,
-.hljs-builtin-name {
-  color: #0086b3;
+.inner-content h1 {
+  color:#DDD;
 }
-
-.hljs-meta {
-  color: #999;
-  font-weight: bold;
+.inner-content h2 {
+  color: #DDD;
 }
-
-.hljs-deletion {
-  background: #fdd;
-}
-
-.hljs-addition {
-  background: #dfd;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
+.inner-content a {
+  color: white;
+  text-decoration: none;
 }
